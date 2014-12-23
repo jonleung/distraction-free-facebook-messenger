@@ -1,18 +1,28 @@
-// Copyright (c) 2011 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
-// Called when the user clicks on the browser action.
-
-
-
 chrome.browserAction.onClicked.addListener(function(tab) {
-  // No tabs or host permissions needed!
-  console.log('Turning ' + tab.url + ' red!');
-  chrome.tabs.create({
-  	url: "https://www.facebook.com/messages/",
-  }, function(tab) {
-  	alet(tab);
-  });
 
+	chrome.storage.local.get(null, function(storageObject) {
+		var tabId = storageObject.tabId;
+		var windowId = storageObject.windowId;
+
+		chrome.windows.getAll({ populate: true }, function (windows) {
+			var exists = false;
+			for (var i = 0, window; window = windows[i]; i++) {
+				for (var j = 0, tab; tab = window.tabs[j]; j++) {
+					if (tab.id === tabId) {
+						exists = true
+					}
+				}
+			}
+			if (exists === true) {
+				chrome.tabs.update(tabId, {selected: true});
+				chrome.windows.update(windowId, {focused: true});
+			}
+			else {
+				chrome.tabs.create({ url: "https://www.facebook.com/messages/" }, function(tab) {
+					chrome.storage.local.set({tabId: tab.id, windowId: tab.windowId}, function(tab) {
+					});
+				});
+			}
+		});
+	});
 });

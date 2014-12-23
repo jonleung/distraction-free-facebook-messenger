@@ -1,1 +1,0 @@
-window.location = "https://www.facebook.com/messages/"

@@ -3,7 +3,7 @@
   "description": "Distraction Free Facebook Messenger",
   "version": "0.0",
   "permissions": [
-    "activeTab"
+    "activeTab", "storage", "tabs"
   ],
   "background": {
     "scripts": ["js/app.js"],
