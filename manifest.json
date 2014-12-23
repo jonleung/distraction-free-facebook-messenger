@@ -10,7 +10,12 @@
     "persistent": false
   },
   "browser_action": {
-    "default_title": "Just Messenger"
+    "default_title": "Just Messenger",
+    "default_icon": {                    // optional
+      "19": "images/icon19.png",           // optional
+      "38": "images/icon38.png"            // optional
+    },
+
   },
   "manifest_version": 2
 }
