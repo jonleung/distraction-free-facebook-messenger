@@ -3,10 +3,16 @@
 // found in the LICENSE file.
 
 // Called when the user clicks on the browser action.
-// chrome.browserAction.onClicked.addListener(function(tab) {
+
+
+
+chrome.browserAction.onClicked.addListener(function(tab) {
   // No tabs or host permissions needed!
-//   console.log('Turning ' + tab.url + ' red!');
-//   chrome.tabs.executeScript({
-//     code: 'document.body.style.backgroundColor="red"'
-//   });
-// });
+  console.log('Turning ' + tab.url + ' red!');
+  chrome.tabs.create({
+  	url: "https://www.facebook.com/messages/",
+  }, function(tab) {
+  	alet(tab);
+  });
+
+});
