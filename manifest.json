@@ -1,0 +1,16 @@
+{
+  "name": "Just Messenger",
+  "description": "Distraction Free Facebook Messenger",
+  "version": "0.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["app.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Just Messenger"
+  },
+  "manifest_version": 2
+}
