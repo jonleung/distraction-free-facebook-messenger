@@ -1,20 +1,26 @@
 {
-  "name": "Just Messenger",
-  "description": "Distraction Free Facebook Messenger",
-  "version": "0.1",
-  "permissions": [
-    "activeTab", "storage", "tabs", "https://www.facebook.com/*"
-  ],
-  "background": {
-    "scripts": ["js/background.js"],
-    "persistent": false
-  },
-  "browser_action": {
-    "default_title": "Just Messenger",
-    "default_icon": {                    // optional
-      "19": "images/icon19.png",           // optional
-      "38": "images/icon38.png"            // optional
-    }
-  },
-  "manifest_version": 2
+	"name": "Distraction Free Facebook Messenger [beta]",
+	"description": "Remove all temptation from Facebook Messenger",
+	"version": "0.1",
+	"permissions": [
+		"activeTab",
+		"storage",
+		"tabs",
+		"https://www.facebook.com/*"
+	],
+	"background": {
+		"scripts": [
+			"js/background.js"
+		],
+		"persistent": false
+	},
+	"browser_action": {
+		"default_title": "Just Messenger",
+		"default_icon": {
+			"19": "images/icon19.png",
+			"38": "images/icon38.png",
+			"128": "images/icon128.png"
+		}
+	},
+	"manifest_version": 2
 }
