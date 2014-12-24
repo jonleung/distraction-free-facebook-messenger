@@ -9,8 +9,11 @@ $('#pagelet_ticker').remove() // removes the annoying mini newsfeed on the top r
 $('._5qqe').remove(); // removes a tiny box that show up
 
 // Remove any kind of hover overs
-var style = $('<style>.uiContextualLayerPositioner {display: none;}</style>')
+var style = $('<style>.uiContextualLayerLeft {display: none;}</style>')
 $('html > head').append(style);
+
+window.resizeTo(window.outerWidth+1, window.outerHeight+1);
+window.resizeTo(window.outerWidth-1, window.outerHeight-1);
 
 setInterval(function() {
 
