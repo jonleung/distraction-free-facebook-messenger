@@ -25,8 +25,9 @@ Distraction Free Facebook Messenger (DFFM) is a Chrome Extension that removes al
 - all links to profiles and other facebook pages have been disabled
 - all additional info found via hovering has been disabled
 
+## Problems & Feedback:
 
-
+*Please note that this is in beta! Please file [issues](https://github.com/jonleung/distraction-free-facebook-messenger/issues) and [pull requests](https://github.com/jonleung/distraction-free-facebook-messenger/fork)!*
 
 
 
