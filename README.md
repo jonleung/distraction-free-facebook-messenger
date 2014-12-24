@@ -1,6 +1,6 @@
-# [Distraction Free Facebook Messenger](https://chrome.google.com/webstore/detail/distraction-free-facebook/ipkbhlfkopeokhpbhgmlonagpppedfej) ![Analytics](https://ga-beacon.appspot.com/UA-47724303-2/docs/readme?pixel)*
+# [Distraction Free Facebook Messenger](https://chrome.google.com/webstore/detail/distraction-free-facebook/ipkbhlfkopeokhpbhgmlonagpppedfej) ![Analytics](https://ga-beacon.appspot.com/UA-47724303-2/docs/readme?pixel)
 
-Distraction Free Facebook Messenger (DFFM) is a Chrome Extension that removes all of the temptation from Facebook Messenger.
+Distraction Free Facebook Messenger is a Chrome Extension that removes all of the temptation from Facebook Messenger.
 
 *Please note that this is in beta! Please file [issues](https://github.com/jonleung/distraction-free-facebook-messenger/issues) and [pull requests](https://github.com/jonleung/distraction-free-facebook-messenger/fork)!*
 
