@@ -51,7 +51,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 							// chrome.tabs.executeScript({ code: 'alert("hello world");' });
 							executeScripts(null, [ 
 							    { file: 'js/lib/jquery-2.1.3.min.js' }, 
-							    { file: "js/modifications.js" }
+							    { file: "js/strip.js" }
 							])
 						}	  
 					});
