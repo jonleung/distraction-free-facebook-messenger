@@ -1,4 +1,0 @@
-* when you click on the extension button, it takes you to facebook messenger
-* on that page, remove the top bar of facebook
-* remove all profile links that link to facebook
-* remove all other things that could link to facebook
