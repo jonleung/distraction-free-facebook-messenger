@@ -1,7 +1,7 @@
 {
   "name": "Just Messenger",
   "description": "Distraction Free Facebook Messenger",
-  "version": "0.0",
+  "version": "0.1",
   "permissions": [
     "activeTab", "storage", "tabs", "https://www.facebook.com/*"
   ],
