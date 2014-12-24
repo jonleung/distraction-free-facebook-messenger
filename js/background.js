@@ -48,7 +48,7 @@ chrome.browserAction.onClicked.addListener(function(tab) { // when the extension
 					chrome.storage.local.set({tabId: tab.id, windowId: tab.windowId}); // and remember that you did that
 					chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) { // and then run the scripts on the messenger page
 						if (tabId === tab.id && changeInfo.status === 'complete') {
-							executeScripts(null, [ 
+							executeScripts(tabId, [ 
 							    { file: 'js/lib/jquery-2.1.3.min.js' }, 
 							    { file: "js/strip.js" }
 							])
