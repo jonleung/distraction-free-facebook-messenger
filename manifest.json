@@ -1,7 +1,7 @@
 {
 	"name": "Distraction Free Facebook Messenger",
 	"description": "Remove all temptation from Facebook Messenger",
-	"version": "0.1.0",
+	"version": "0.4.1",
 	"permissions": [
 		"activeTab",
 		"storage",
@@ -10,7 +10,7 @@
 	],
 	"background": {
 		"scripts": [
-			"js/background.js"
+			"js/extension_helpers.js", "js/background.js"
 		],
 		"persistent": false
 	},
