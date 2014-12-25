@@ -13,6 +13,10 @@ $('html > head').append(style);																									// If it is the more gen
 
 setInterval(function() { // a set timeout is necessary because FB generates new content on the fly in messages
 
+// Fix for https://github.com/jonleung/distraction-free-facebook-messenger/issues/4
+// Remove notification number from title
+document.title = document.title.replace(/\((.+)\)\ /,'');
+
 	// neutor all links that hover and bring up information 
 	// when hovered over (usually profiles) so that they are not clickable.
 	$('a[data-hovercard]').each(function(i, aTag) {
