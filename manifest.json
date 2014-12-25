@@ -1,7 +1,7 @@
 {
 	"name": "Distraction Free Facebook Messenger",
 	"description": "Remove all temptation from Facebook Messenger",
-	"version": "0.4",
+	"version": "0.1.0",
 	"permissions": [
 		"activeTab",
 		"storage",
