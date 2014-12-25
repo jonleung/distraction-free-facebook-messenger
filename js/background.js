@@ -38,7 +38,7 @@ chrome.browserAction.onClicked.addListener(function(tab) { // when the extension
 		var tabId = storageObject.tabId;
 		var windowId = storageObject.windowId;
 
-		tabExists(tabId, function(exists) { // if it is, focus on that
+		tabExists(tabId, function(exists) { // if it is, focus on that existing tab
 			if (exists === true) {
 				chrome.windows.update(windowId, {focused: true});
 				chrome.tabs.update(tabId, {selected: true});
@@ -49,8 +49,8 @@ chrome.browserAction.onClicked.addListener(function(tab) { // when the extension
 					chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) { // and then run the scripts on the messenger page
 						if (tabId === tab.id && changeInfo.status === 'complete') {
 							executeScripts(tabId, [ 
-							    { file: 'js/lib/jquery-2.1.3.min.js' }, 
-							    { file: "js/strip.js" }
+						    { file: 'js/lib/jquery-2.1.3.min.js' }, 
+						    { file: "js/strip.js" }
 							])
 						}	  
 					});
