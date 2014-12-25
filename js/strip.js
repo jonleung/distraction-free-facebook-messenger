@@ -13,10 +13,18 @@ $('html > head').append(style);																									// If it is the more gen
 
 setInterval(function() { // a set timeout is necessary because FB generates new content on the fly in messages
 
-// Fix for https://github.com/jonleung/distraction-free-facebook-messenger/issues/4
-// Remove notification number from title
-document.title = document.title.replace(/\((.+)\)\ /,'');
-
+	// Fix for https://github.com/jonleung/distraction-free-facebook-messenger/issues/4
+	// Remove notification number from title
+	var unreadMessageCountString = $("#u_0_n > div > div.wmMasterView > div > div._6jw > ul > li.selectedFolder > h3 > a > span.pls._1r.fwn").text();
+	
+	var notificationRegex = /\(\d+\)/;
+	if (notificationRegex.test(document.title)) {
+		document.title = document.title.replace(/\((\d+)\)/, unreadMessageCountString);
+	}
+	else {
+		document.title = unreadMessageCountString + " " + document.title
+	}
+	
 	// neutor all links that hover and bring up information 
 	// when hovered over (usually profiles) so that they are not clickable.
 	$('a[data-hovercard]').each(function(i, aTag) {
