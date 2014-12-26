@@ -55,6 +55,10 @@ window.CT = window.CT || {};
 				.on('click', this.alertWarning);
 		},
 
+		stripNotificationInTitle: function() {
+			document.title = document.title.replace(/\((.+)\)\ /,'');
+		},
+
 		replaceNotificationCountWithUnreadMessageCount: function() {
 			var unreadMessageCountString = $("#u_0_n > div > div.wmMasterView > div > div._6jw > ul > li.selectedFolder > h3 > a > span.pls._1r.fwn").text();
 			
@@ -79,7 +83,7 @@ window.CT = window.CT || {};
 
 		stripDynamicEls: function() {
 			this.neuterLinks();
-			this.replaceNotificationCountWithUnreadMessageCount();
+			this.stripNotificationInTitle();
 		},
 
 		strip: function() {
