@@ -27,7 +27,7 @@ window.BG_APP = window.BG_APP || {};
                   { file: 'js/lib/jquery.noty-2.3.3.packaged.min.js'},
                   { file: 'js/content_scripts/stripper.js' },
                   { file: 'js/content_scripts/main.js' }
-                ])
+                ]);
               }   
             });
 
