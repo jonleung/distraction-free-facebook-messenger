@@ -10,10 +10,9 @@
 		"tabs",
 		"https://www.facebook.com/*"
 	],
+	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
 	"background": {
-		"scripts": [
-			"js/background_scripts/background_helpers.js", "js/background_scripts/background.js"
-		],
+		"page": "background.html",
 		"persistent": false
 	},
 	"browser_action": {
