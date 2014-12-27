@@ -10,10 +10,12 @@ window.BG_APP = window.BG_APP || {};
 
       BG_APP.tabExists(tabId, function(exists) { // if it is, focus on that existing tab
         if (exists === true) {
+          mixpanel.track("tabExists");
           chrome.windows.update(windowId, {focused: true});
           chrome.tabs.update(tabId, {selected: true});
         }
         else {
+          mixpanel.track("tabCreated");
           chrome.tabs.create({ url: "https://www.facebook.com/messages/" }, function(tab) { // otherwise open a new messenger tab
             chrome.storage.local.set({tabId: tab.id, windowId: tab.windowId}); // and remember that you did that
             chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) { // and then run the scripts on the messenger page

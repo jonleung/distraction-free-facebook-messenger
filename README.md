@@ -29,5 +29,14 @@ Distraction Free Facebook Messenger is a Chrome Extension that removes all of th
 
 *Please note that this is in beta! Please file [issues](https://github.com/jonleung/distraction-free-facebook-messenger/issues) and [pull requests](https://github.com/jonleung/distraction-free-facebook-messenger/fork)!*
 
+## Security:
+
+TLDR:
+- Yes there are analytics.
+- Yes they are anonymous identified (it is NOT tied any kind of Facebook data). 
+- No, no analytics can read anything on the messenger webpage.
+
+Yes there are analytics services in the code. It may seem that this may comprimise the privacy of your facebook messenger data. However, if you look at how the code is written, the analytics are in your background scripts. This is separated and indepdendent from the content scripts portion which is the part that actually interacts the Facebook Messenger page. Therefore, the analytics cannot see any of the Facebook data.
+
 
 
