@@ -20,9 +20,9 @@ window.BG_APP = window.BG_APP || {};
 
           chrome.tabs.create({ url: "https://www.facebook.com/messages/" }, function(tab) { // otherwise open a new messenger tab
             chrome.storage.local.set({tabId: tab.id, windowId: tab.windowId}); // and remember that you did that
-            chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) { // and then run the scripts on the messenger page
+            chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) { // and then run the scripts on the messenger page
               if (tabId === tab.id && changeInfo.status === 'complete') {
-                BG_APP.executeScripts(tabId, [ 
+                BG_APP.executeScripts(tabId, [
                   { file: 'js/lib/jquery-2.1.3.min.js' },
                   { file: 'js/lib/jquery.noty-2.3.3.packaged.min.js'},
                   { file: 'js/content_scripts/stripper.js' },
