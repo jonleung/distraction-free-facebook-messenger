@@ -31,7 +31,7 @@ window.CT = window.CT || {};
 				theme: 'relax',
 		    text: "Nope... That takes you to facebook. We don't want to facebook.",
 		    timeout: 2500,
-		    closeWith: ['click', 'button', 'hover', 'backdrop'],
+		    closeWith: ['click', 'button', 'backdrop'],
 		    animation: {
 	        open: {height: 'toggle'}, // jQuery animate function property object
 	        close: {height: 'toggle'}, // jQuery animate function property object
