@@ -2,7 +2,13 @@
 
 Distraction Free Facebook Messenger is a Chrome Extension that removes all of the temptation from Facebook Messenger.
 
-*Please note that this is in beta! Please file [issues](https://github.com/jonleung/distraction-free-facebook-messenger/issues) and [pull requests](https://github.com/jonleung/distraction-free-facebook-messenger/fork)!*
+## Feedback:
+
+We always love feedback! Please note that this is still beta! 
+
+Feel free to tweet me at [@jonathanjleung](http://twitter.com/jonathanjleung) or email me at [me@jonl.org](mailto:me@jonl.org) at any time.
+
+Also, definitely file [issues](https://github.com/jonleung/distraction-free-facebook-messenger/issues) and [pull requests](https://github.com/jonleung/distraction-free-facebook-messenger/fork)!
 
 [![Down](http://i.imgur.com/GCvIjTK.png)](https://chrome.google.com/webstore/detail/distraction-free-facebook/ipkbhlfkopeokhpbhgmlonagpppedfej)
 
@@ -24,10 +30,6 @@ Distraction Free Facebook Messenger is a Chrome Extension that removes all of th
 - no sidebar mini-newsfeed
 - all links to profiles and other facebook pages have been disabled
 - all additional info found via hovering has been disabled
-
-## Problems & Feedback:
-
-*Please note that this is in beta! Please file [issues](https://github.com/jonleung/distraction-free-facebook-messenger/issues) and [pull requests](https://github.com/jonleung/distraction-free-facebook-messenger/fork)!*
 
 ## Security:
 
