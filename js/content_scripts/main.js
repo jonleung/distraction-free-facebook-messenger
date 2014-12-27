@@ -2,7 +2,7 @@ window.CT = window.CT || {};
 
 (function(CT) {
 
-	CT.Stripper.strip();
+  CT.Stripper.strip();
 
 })(window.CT)
 
