@@ -21,7 +21,8 @@ window.CT = window.CT || {};
     DISTRACTING_LINK_SELECTORS: [
       '.webMessengerMessageGroup a:has(img)',  // clickable profile picture in chat box
       '.webMessengerMessageGroup strong a',    // clickable name in chat thread
-      '.titlebarText'                          // clickable name name in mini chat window
+      '.titlebarText',                         // clickable name name in mini chat window
+      '#webMessengerHeaderName a'              // clickable name at the top of the chat thread
     ],
 
     alertWarning: function() {
