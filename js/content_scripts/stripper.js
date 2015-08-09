@@ -9,6 +9,7 @@ window.CT = window.CT || {};
       '#rightCol',        // right column selector
       '._5qqe',           // tiny box that is used to push the sidebar's content below the navbar
       '#pagelet_ticker',  // mini newsfeed selector
+      '#pagelet_canvas_nav_content' // suggested content like games
     ],
 
     DISTRACTING_POPUP_SELECTORS: [
