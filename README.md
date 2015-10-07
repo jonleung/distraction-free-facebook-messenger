@@ -38,6 +38,6 @@ TLDR:
 - Yes they are anonymous identified (it is NOT tied any kind of Facebook data). 
 - No, no analytics can read anything on the messenger webpage.
 
-Yes there are analytics services in the code. It may seem that this may comprimise the privacy of your facebook messenger data. However, if you look at how the code is written, the analytics are in your background scripts. This is separated and indepdendent from the content scripts portion which is the part that actually interacts the Facebook Messenger page. Therefore, the analytics cannot see any of the Facebook data.
+Yes there are analytics services in the code. It may seem that this may compromise the privacy of your facebook messenger data. However, if you look at how the code is written, the analytics are in your background scripts. This is separated and indepdendent from the content scripts portion which is the part that actually interacts the Facebook Messenger page. Therefore, the analytics cannot see any of the Facebook data.
 
 [![Mobile Analytics](http://cdn.mxpnl.com/site_media/images/partner/badge_light.png)](https://mixpanel.com/f/partner)
