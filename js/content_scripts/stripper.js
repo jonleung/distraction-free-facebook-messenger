@@ -1,7 +1,7 @@
 window.CT = window.CT || {};
 
 (function(CT) {
-  
+
   CT.Stripper = {
 
     STATIC_DISTRACTIONS: [
@@ -15,7 +15,7 @@ window.CT = window.CT || {};
     DISTRACTING_POPUP_SELECTORS: [
       '.uiContextualLayerLeft',        // appears when hovering over people in the right side chat bar
       '.uiContextualLayerAboveLeft',  // appears above a hoverable profile link
-      '.uiContextualLayerBelowLeft',  // appears below a hoverable profile link 
+      '.uiContextualLayerBelowLeft',  // appears below a hoverable profile link
       '._50d1'
     ],
 
@@ -43,7 +43,7 @@ window.CT = window.CT || {};
         dismissQueue: true, // If you want to use queue feature set this true
       });
     },
-    
+
     neuterLinks: function() {
       var undesirableLinkSelector = this.DISTRACTING_LINK_SELECTORS
         .map(function(selector) {
@@ -63,7 +63,7 @@ window.CT = window.CT || {};
 
     replaceNotificationCountWithUnreadMessageCount: function() {
       var unreadMessageCountString = $("#u_0_n > div > div.wmMasterView > div > div._6jw > ul > li.selectedFolder > h3 > a > span.pls._1r.fwn").text();
-      
+
       var notificationRegex = /\(\d+\)/;
       if (notificationRegex.test(document.title)) {
         document.title = document.title.replace(/\((\d+)\)/, unreadMessageCountString);
@@ -84,8 +84,7 @@ window.CT = window.CT || {};
     },
 
     stripDynamicEls: function() {
-      this.neuterLinks();
-      this.stripNotificationInTitle();
+      // this.neuterLinks(); // Disable neutering links because they seem to be useful when answering messages      this.stripNotificationInTitle();
     },
 
     strip: function() {
@@ -98,6 +97,3 @@ window.CT = window.CT || {};
   };
 
 })(window.CT);
-
-
-
