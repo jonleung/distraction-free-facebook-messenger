@@ -15,13 +15,13 @@ Also, definitely file [issues](https://github.com/jonleung/distraction-free-face
 ## Screenshots
 
 ### *Start with clutter:*
-![Screenshot](https://lh4.googleusercontent.com/EPZlDXzQjrs4YOzk16W_RmIQ4g2_EnpghjkTouZmUg-mkPTsdeftofrtqvnSL4ZUkbVzStHs-yY=s640-h400-e365-rw)
+![Screenshot](https://i.imgur.com/QI8pP4V.png)
 
 ### *Remove all of the temptations:*
-![Screenshot](https://lh3.googleusercontent.com/iSzwWllRIgz6RW5oh4dqPUS2HLV_4M8Jca971_XcXPwO0C3Sf0LVkef2nJF3RCheS2vR5hg_=s640-h400-e365-rw)
+![Screenshot](https://i.imgur.com/XfTZhEX.png)
 
 ### *Cleanup complete:*
-![Screenshot](https://lh3.googleusercontent.com/EMLOFRI_iR4ib4G4f2y_24JDOdenJS93IFOAjvlHQGB-8EAMlz-DdbMQIfXVYCwgaBgPiH8M=s640-h400-e365-rw)
+![Screenshot](https://i.imgur.com/u2tA9vx.png)
 
 ## Features:
 
