@@ -1,12 +1,10 @@
-# [Distraction Free Facebook Messenger](https://chrome.google.com/webstore/detail/distraction-free-facebook/ipkbhlfkopeokhpbhgmlonagpppedfej) ![Analytics](https://ga-beacon.appspot.com/UA-47724303-2/docs/readme?pixel)
+me# [Distraction Free Facebook Messenger](https://chrome.google.com/webstore/detail/distraction-free-facebook/ipkbhlfkopeokhpbhgmlonagpppedfej) ![Analytics](https://ga-beacon.appspot.com/UA-47724303-2/docs/readme?pixel)
 
 Distraction Free Facebook Messenger is a Chrome Extension that removes all of the temptation from Facebook Messenger.
 
 ## Feedback:
 
 We always love feedback! Please note that this is still beta! 
-
-Feel free to tweet me at [@jonathanjleung](http://twitter.com/jonathanjleung) or email me at [me@jonl.org](mailto:me@jonl.org) at any time.
 
 Also, definitely file [issues](https://github.com/jonleung/distraction-free-facebook-messenger/issues) and [pull requests](https://github.com/jonleung/distraction-free-facebook-messenger/fork)!
 
